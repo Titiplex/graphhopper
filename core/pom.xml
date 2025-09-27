@@ -120,17 +120,18 @@
             <artifactId>logback-classic</artifactId>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>com.graphhopper</groupId>
-            <artifactId>graphhopper-nav</artifactId>
-            <version>11.0-SNAPSHOT</version>
-            <scope>test</scope>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.graphhopper</groupId>-->
+<!--            <artifactId>graphhopper-nav</artifactId>-->
+<!--            <version>11.0-SNAPSHOT</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
         <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
         <dependency>
             <groupId>com.github.javafaker</groupId>
             <artifactId>javafaker</artifactId>
             <version>1.0.2</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
@@ -187,12 +188,14 @@
                         <param>com.graphhopper.util.GHUtility</param>
                         <param>com.graphhopper.util.DistanceCalcEuclidean</param>
                         <param>com.graphhopper.util.details.IntersectionValues</param>
+                        <param>com.graphhopper.util.ArrayUtil</param>
                     </targetClasses>
                     <targetTests>
                         <param>com.graphhopper.util.GHUtilityTest</param>
                         <param>com.graphhopper.util.NewGHUtilityTest</param>
                         <param>com.graphhopper.util.DistanceCalcEuclideanTest</param>
                         <param>com.graphhopper.util.IntersectionValuesTest</param>
+                        <param>com.graphhopper.util.ArrayUtilTest</param>
                     </targetTests>
                     <threads>4</threads>
                     <mutationThreshold>0</mutationThreshold>

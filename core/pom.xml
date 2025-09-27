@@ -185,10 +185,14 @@
                 <configuration>
                     <targetClasses>
                         <param>com.graphhopper.util.GHUtility</param>
+                        <param>com.graphhopper.util.DistanceCalcEuclidean</param>
+                        <param>com.graphhopper.util.details.IntersectionValues</param>
                     </targetClasses>
                     <targetTests>
                         <param>com.graphhopper.util.GHUtilityTest</param>
                         <param>com.graphhopper.util.NewGHUtilityTest</param>
+                        <param>com.graphhopper.util.DistanceCalcEuclideanTest</param>
+                        <param>com.graphhopper.util.IntersectionValuesTest</param>
                     </targetTests>
                     <threads>4</threads>
                     <mutationThreshold>0</mutationThreshold>

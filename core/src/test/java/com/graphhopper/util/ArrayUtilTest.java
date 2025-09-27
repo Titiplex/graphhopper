@@ -178,4 +178,50 @@ class ArrayUtilTest {
         int[] b = {3, 7, 9, 10, 11, 12, 15, 20, 21, 26};
         assertEquals(from(2, 3, 6, 7, 8, 9, 10, 11, 12, 15, 20, 21, 26), from(ArrayUtil.merge(a, b)));
     }
+    /**
+     * Tests that {@code subList} correctly returns a sublist from a normal range of indices.
+     * <p>
+     * Example: from the list [1, 2, 3, 4, 5], a sublist from index 1 to 4
+     * should return [2, 3, 4].
+     * </p>
+     */
+    @Test
+    public void testSubListNormal() {
+        IntArrayList original = IntArrayList.from(1, 2, 3, 4, 5);
+
+        IntArrayList sub = ArrayUtil.subList(original, 1, 4);
+
+        // Expected: [2, 3, 4]
+        assertEquals(IntArrayList.from(2, 3, 4), sub);
+    }
+
+        /**
+     * Tests that {@code subList} returns the full list when the range covers all elements.
+     * <p>
+     * Example: from the list [1, 2, 3], a sublist from index 0 to size() should return [1, 2, 3].
+     * </p>
+     */
+    @Test
+    public void testSubListFull() {
+        IntArrayList original = IntArrayList.from(1, 2, 3);
+        IntArrayList sub = ArrayUtil.subList(original, 0, original.size());
+
+        // Expected: [1, 2, 3]
+        assertEquals(IntArrayList.from(1, 2, 3), sub);
+    }
+
+        /**
+     * Tests that {@code subList} returns an empty list when fromIndex equals toIndex.
+     * <p>
+     * Example: from the list [1, 2, 3], a sublist from index 2 to 2 should return an empty list.
+     * </p>
+     */
+    @Test
+    public void testSubListEmpty() {
+        IntArrayList original = IntArrayList.from(1, 2, 3);
+        IntArrayList sub = ArrayUtil.subList(original, 2, 2);
+
+        // Expected: empty list
+        assertEquals(IntArrayList.from(), sub);
+    }
 }

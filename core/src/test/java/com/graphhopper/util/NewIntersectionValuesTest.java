@@ -15,8 +15,9 @@ import static org.junit.jupiter.api.Assertions.*;
  * into a list of {@link IntersectionValues}. It checks that the
  * fields bearing, entry, in, and out are populated as expected
  * for each element.</p>
+ * @author Mohamed Terbaoui
  */
-public class IntersectionValuesTest {
+public class NewIntersectionValuesTest {
 
     @Test
     public void testCreateListValid() {

@@ -8,13 +8,13 @@
 [NewGHUtilityTest](core/src/test/java/com/graphhopper/util/NewGHUtilityTest.java) contiens les tests de la classe
 [GHUtility](core/src/main/java/com/graphhopper/util/GHUtility.java)
 
-[ArrayUtilTest](core\src\test\java\com\graphhopper\util\ArrayUtilTest.java) contiens les tests de la classe
+[NewArrayUtilTest](core\src\test\java\com\graphhopper\util\NewArrayUtilTest.java) contiens les tests de la classe
 [ArrayUtil](core\src\main\java\com\graphhopper\util\ArrayUtil.java)
 
-[DistanceCalcEuclideanTest](core\src\test\java\com\graphhopper\util\DistanceCalcEuclideanTest.java) contiens les tests de la classe
+[NewDistanceCalcEuclideanTest](core\src\test\java\com\graphhopper\util\NewDistanceCalcEuclideanTest.java) contiens les tests de la classe
 [DistanceCalcEuclidean](core\src\main\java\com\graphhopper\util\DistanceCalcEuclidean.java)
 
-[IntersectionValuesTest](core\src\test\java\com\graphhopper\util\IntersectionValuesTest.java) contiens les tests de la classe
+[NewIntersectionValuesTest](core\src\test\java\com\graphhopper\util\NewIntersectionValuesTest.java) contiens les tests de la classe
 [IntersectionValues](core\src\main\java\com\graphhopper\util\details\IntersectionValues.java)
 
 ## Couverture de code avant/après nos tests

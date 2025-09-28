@@ -186,13 +186,17 @@
                     <targetClasses>
                         <param>com.graphhopper.util.GHUtility</param>
                         <param>com.graphhopper.util.DistanceCalcEuclidean</param>
+                        <param>com.graphhopper.util.ArrayUtil</param>
                         <param>com.graphhopper.util.details.IntersectionValues</param>
                     </targetClasses>
                     <targetTests>
                         <param>com.graphhopper.util.GHUtilityTest</param>
                         <param>com.graphhopper.util.NewGHUtilityTest</param>
                         <param>com.graphhopper.util.DistanceCalcEuclideanTest</param>
-                        <param>com.graphhopper.util.IntersectionValuesTest</param>
+                        <param>com.graphhopper.util.NewDistanceCalcEuclideanTest</param>
+                        <param>com.graphhopper.util.ArrayUtilTest</param>
+                        <param>com.graphhopper.util.NewArrayUtilTest</param>
+                        <param>com.graphhopper.util.NewIntersectionValuesTest</param>
                     </targetTests>
                     <threads>4</threads>
                     <mutationThreshold>0</mutationThreshold>

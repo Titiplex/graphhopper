@@ -1,6 +1,6 @@
 # Documentation for IFT3913 task, université de Montréal.
 
-**authors** : Johanny Titouan, Mohammed Terbaoui.
+**authors** : Johanny Titouan, Mohamed Terbaoui.
 **date** : Automn 2025.
 
 ## Classes containing the required tests
